@@ -1,10 +1,10 @@
 import "./App.scss";
+import Header from "./components/common/Header/header";
 
 function App() {
   return (
     <div className="App">
-      <h1>Stay Healthy</h1>
-      <p>My first React app</p>
+      <Header />
     </div>
   );
 }
