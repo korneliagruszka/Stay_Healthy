@@ -1,0 +1,26 @@
+@import "src/styles/colors.scss";
+
+.Header {
+  background-color: $color-light-grey;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 100px;
+}
+
+.header_first {
+  color: $color-black-olive;
+}
+
+.header_second {
+  color: $color-dark-green;
+}
+
+.navigation a {
+  color: $color-white;
+  padding: 10px;
+  margin: 0 30px;
+  font-weight: bold;
+}
