@@ -8,8 +8,8 @@ function Header() {
         <span className="header_second">Healthy</span>
         </h1>
         <nav className="navigation">
-          <a href="">O nas</a>
-          <a href="">Wypróbuj</a>
+          <a href="#banner">O nas</a>
+          <a href="">Planowanie</a>
           <a href="">Kontakt</a>
         </nav>
       </div>
