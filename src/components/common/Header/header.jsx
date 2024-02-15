@@ -9,7 +9,7 @@ function Header() {
         </h1>
         <nav className="navigation">
           <a href="#banner">O nas</a>
-          <a href="">Planowanie</a>
+          <a href="#planning">Planowanie</a>
           <a href="">Kontakt</a>
         </nav>
       </div>
