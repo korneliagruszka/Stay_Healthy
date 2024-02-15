@@ -1,6 +1,6 @@
 @import "src/styles/colors.scss";
 
-.Header {
+.header {
   background-color: $color-light-grey;
   padding: 10px;
   display: flex;
@@ -8,19 +8,36 @@
   align-items: center;
   width: 100vw;
   height: 100px;
+  border-bottom: 2px solid $color-light-grey;
+  opacity: 1;
+  position: fixed;
 }
 
 .header_first {
   color: $color-black-olive;
+  margin-left: 20px;
 }
 
 .header_second {
   color: $color-dark-green;
 }
 
+.navigation {
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
 .navigation a {
   color: $color-white;
+  display: flex;
+  align-items: center;
+  height: 100px;
   padding: 10px;
-  margin: 0 30px;
+  margin: 0 50px;
   font-weight: bold;
+}
+
+.navigation a:hover {
+  border-bottom: 2px solid $color-dark-green;
 }
