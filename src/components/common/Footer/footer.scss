@@ -1,0 +1,32 @@
+@import "src/styles/colors.scss";
+
+.footer {
+  background-color: $color-light-grey;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 100px;
+  border-bottom: 2px solid $color-light-grey;
+  opacity: 1;
+  justify-content: space-between;
+}
+
+.footer_list {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.footer_list a {
+  margin-right: 200px;
+  font-size: 14px;
+}
+
+.footer_list p {
+  font-weight: 500;
+  color: $color-dark-green;
+  margin-top: 10px;
+  font-size: 14px;
+}
