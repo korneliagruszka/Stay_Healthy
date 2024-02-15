@@ -1,6 +1,7 @@
 import "./App.scss";
 import Banner from "./components/Banner/banner";
 import Planning from "./components/Planning/planning";
+import Footer from "./components/common/Footer/footer";
 import Header from "./components/common/Header/header";
 
 function App() {
@@ -12,6 +13,9 @@ function App() {
       </section>
       <section>
         <Planning />
+      </section>
+      <section>
+        <Footer />
       </section>
     </div>
   );

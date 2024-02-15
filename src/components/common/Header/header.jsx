@@ -10,7 +10,7 @@ function Header() {
         <nav className="navigation">
           <a href="#banner">O nas</a>
           <a href="#planning">Planowanie</a>
-          <a href="">Kontakt</a>
+          <a href="#footer">Kontakt</a>
         </nav>
       </div>
     );
