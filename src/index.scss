@@ -1,5 +1,8 @@
+@import "src/styles/colors.scss";
+@import "./styles/fonts.scss";
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: $primary-font;
   line-height: 1.5;
   font-weight: 400;
 
@@ -15,11 +18,11 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: $color-dark-green;
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: $color-dark-green;
 }
 
 body {
@@ -47,7 +50,7 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: $color-dark-green;
 }
 button:focus,
 button:focus-visible {
@@ -60,7 +63,7 @@ button:focus-visible {
     background-color: #ffffff;
   }
   a:hover {
-    color: #747bff;
+    color: $color-dark-green;
   }
   button {
     background-color: #f9f9f9;
