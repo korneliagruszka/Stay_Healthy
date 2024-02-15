@@ -1,0 +1,48 @@
+@import "src/styles/colors.scss";
+
+.banner {
+  background-color: $color-white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  height: calc(100vh - 100px);
+  border-bottom: 2px solid $color-light-grey;
+  opacity: 1;
+  position: fixed;
+  top: 130px;
+}
+
+.banner p {
+  color: $color-black;
+  width: 50%;
+  padding: 40px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: center;
+}
+
+.banner img {
+  background-position: center;
+  width: 50%;
+  background-size: cover;
+  height: 662px;
+  background-image: url(src/assets/pexels-guillaume-hankenne-2792083.jpg);
+}
+
+.banner button {
+  background-color: $color-viridian;
+  color: $color-white;
+  font-size: 15px;
+  padding: 5px 20px;
+  width: 200px;
+  margin-top: 10%;
+  margin-left: 36%;
+  border: none;
+}
+
+.banner button:hover {
+  background-color: $color-dark-green;
+}
