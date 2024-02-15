@@ -1,12 +1,18 @@
 import "./App.scss";
-import Banner from "./components/common/Banner/banner";
+import Banner from "./components/Banner/banner";
+import Planning from "./components/Planning/planning";
 import Header from "./components/common/Header/header";
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Banner />
+      <section>
+        <Header />
+        <Banner />
+      </section>
+      <section>
+        <Planning />
+      </section>
     </div>
   );
 }

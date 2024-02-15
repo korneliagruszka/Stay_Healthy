@@ -1,0 +1,59 @@
+@import "src/styles/colors.scss";
+
+.planning_container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: $color-white;
+  border-bottom: 2px solid $color-light-grey;
+  flex-direction: column;
+  align-items: center;
+}
+
+.planning_header {
+  height: 30px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+
+.planning_box img {
+  width: 100%;
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+}
+
+.planning_articles {
+  width: 100vw;
+  height: calc(100vh - 100px);
+  display: flex;
+  justify-content: space-between;
+}
+
+.planning_box {
+  width: calc(100vw / 3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 30px;
+}
+
+.planning_box p {
+  text-align: center;
+}
+
+.planning_box button {
+  background-color: $color-viridian;
+  color: $color-white;
+  padding: 5px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+.planning_box button:hover {
+  background-color: $color-dark-green;
+}

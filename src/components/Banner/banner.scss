@@ -6,10 +6,8 @@
   align-items: center;
   justify-content: space-between;
   width: 100vw;
-  height: calc(100vh - 100px);
   border-bottom: 2px solid $color-light-grey;
   opacity: 1;
-  position: fixed;
   top: 130px;
 }
 
@@ -28,8 +26,9 @@
   background-position: center;
   width: 50%;
   background-size: cover;
-  height: 662px;
+  height: 600px;
   background-image: url(src/assets/pexels-guillaume-hankenne-2792083.jpg);
+  margin-top: 120px;
 }
 
 .banner button {
