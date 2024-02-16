@@ -6,7 +6,7 @@ function Banner() {
 
   const handleButtonClick = () => {
     const planningElement = planningRef.current;
-    const offsetTop = planningElement.offsetTop + 300;
+    const offsetTop = planningElement.offsetTop + 350;
     window.scrollTo({ top: offsetTop, behavior: "smooth" });
   };
 
