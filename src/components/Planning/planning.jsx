@@ -2,7 +2,8 @@ import '../Planning/planning.scss';
 
 function Planning() {
     return (
-      <div className="planning_container" id="#planning">
+        
+      <div className="planning_container" id="planning">
         <div className="planning_header">
             <h2>
                 <span className="header_first">Stay</span>
