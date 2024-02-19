@@ -1,14 +1,62 @@
-.training_container{
-    padding-top: 150px;
-    text-align: center;
-    width: 100vw;
-    height: calc(100vh - 272px);
-  
-    h2 {
+@import "src/styles/colors.scss";
+
+.training_container {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  padding-top: 150px;
+  text-align: center;
+  width: 100vw;
+  height: calc(100vh - 272px);
+  justify-content: center;
+  align-items: center;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+    label {
       margin-bottom: 10px;
     }
-  
-    p {
-      font-size: 16px;
+
+    select {
+      margin-bottom: 20px;
+    }
+
+    button {
+      padding: 5px 10px;
+      cursor: pointer;
     }
   }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+
+    th,
+    td {
+      border: 1px solid #ddd;
+      text-align: left;
+      padding: 8px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+  }
+}
+
+.training_container form button {
+  background-color: $color-viridian;
+  color: $color-white;
+  padding: 5px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+.training_container form button:hover {
+  background-color: $color-dark-green;
+}
