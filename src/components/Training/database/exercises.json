@@ -44,19 +44,139 @@
     },
     {
       "id": "Ręce i plecy_8",
-      "name": "Podciąganie chwytem neutralnym",
+      "name": "Szrugsy",
       "series": "4",
       "repeats": "12"
     },
     {
       "id": "Ręce i plecy_9",
-      "name": "Szrugsy",
+      "name": "Podciąganie chwytem neutralnym",
       "series": "4",
       "repeats": "16"
     },
     {
       "id": "Ręce i plecy_10",
       "name": "Ściąganie drążka wyciągu górnego",
+      "series": "4",
+      "repeats": "16"
+    },
+    {
+      "id": "Brzuch i klatka_1",
+      "name": "Rowerek",
+      "series": "4",
+      "repeats": "14"
+    },
+    {
+      "id": "Brzuch i klatka_2",
+      "name": "Brzuszek klasyczny",
+      "series": "4",
+      "repeats": "12"
+    },
+    {
+      "id": "Brzuch i klatka_3",
+      "name": "Antyrotacja",
+      "series": "4",
+      "repeats": "16"
+    },
+    {
+      "id": "Brzuch i klatka_4",
+      "name": "Deska",
+      "series": "4",
+      "repeats": "14"
+    },
+    {
+      "id": "Brzuch i klatka_5",
+      "name": "Przysiad przedni",
+      "series": "4",
+      "repeats": "12"
+    },
+    {
+      "id": "Brzuch i klatka_6",
+      "name": "Pompki",
+      "series": "4",
+      "repeats": "16"
+    },
+    {
+      "id": "Brzuch i klatka_7",
+      "name": "Wyciskanie hantli",
+      "series": "4",
+      "repeats": "12"
+    },
+    {
+      "id": "Brzuch i klatka_8",
+      "name": "Wyprosty przedramion na linkach",
+      "series": "4",
+      "repeats": "12"
+    },
+    {
+      "id": "Brzuch i klatka_9",
+      "name": "Odwrotne pompki",
+      "series": "4",
+      "repeats": "16"
+    },
+    {
+      "id": "Brzuch i klatka_10",
+      "name": "Rozpiętki",
+      "series": "4",
+      "repeats": "16"
+    },
+    {
+      "id": "Nogi_1",
+      "name": "Przysiady",
+      "series": "4",
+      "repeats": "14"
+    },
+    {
+      "id": "Nogi_2",
+      "name": "Wykroki",
+      "series": "4",
+      "repeats": "12"
+    },
+    {
+      "id": "Nogi_3",
+      "name": "Martwy ciąg",
+      "series": "4",
+      "repeats": "16"
+    },
+    {
+      "id": "Nogi_4",
+      "name": "Zakroki",
+      "series": "4",
+      "repeats": "14"
+    },
+    {
+      "id": "Nogi_5",
+      "name": "Przysiad bułgarski",
+      "series": "4",
+      "repeats": "12"
+    },
+    {
+      "id": "Nogi_6",
+      "name": "Krzesełko",
+      "series": "4",
+      "repeats": "16"
+    },
+    {
+      "id": "Nogi_7",
+      "name": "Wypad w bok",
+      "series": "4",
+      "repeats": "12"
+    },
+    {
+      "id": "Nogi_8",
+      "name": "Łyżwiarz",
+      "series": "4",
+      "repeats": "12"
+    },
+    {
+      "id": "Nogi_9",
+      "name": "Wspięcia na palce",
+      "series": "4",
+      "repeats": "16"
+    },
+    {
+      "id": "Nogi_10",
+      "name": "Wejścia na podest",
       "series": "4",
       "repeats": "16"
     }
