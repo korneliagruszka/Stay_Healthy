@@ -10,6 +10,7 @@
   justify-content: center;
   align-items: center;
   min-height: calc(100vh - 272px);
+  gap: 10px;
 
   form {
     display: flex;
@@ -32,7 +33,7 @@
 
   table {
     border-collapse: collapse;
-    width: 100%;
+    width: 1400px;
 
     th,
     td {
@@ -68,6 +69,8 @@ td button:hover {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  align-items: center;
+  justify-content: center;
 }
 
 .exercise_container > div {
