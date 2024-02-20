@@ -7,9 +7,9 @@
   padding-top: 150px;
   text-align: center;
   width: 100vw;
-  height: calc(100vh - 272px);
   justify-content: center;
   align-items: center;
+  min-height: calc(100vh - 272px);
 
   form {
     display: flex;
@@ -47,7 +47,9 @@
   }
 }
 
-.training_container form button {
+.training_container form button,
+td button,
+.add {
   background-color: $color-viridian;
   color: $color-white;
   padding: 5px 20px;
@@ -57,6 +59,23 @@
   font-size: 15px;
 }
 
-.training_container form button:hover {
+.training_container form button:hover,
+td button:hover {
   background-color: $color-dark-green;
+}
+
+.exercise_container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.exercise_container > div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.add {
+  margin-bottom: 10px;
 }
