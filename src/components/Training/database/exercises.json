@@ -1,0 +1,64 @@
+{
+  "exercises": [
+    {
+      "id": "Ręce i plecy_1",
+      "name": "Dzień dobry",
+      "series": "4",
+      "repeats": "14"
+    },
+    {
+      "id": "Ręce i plecy_2",
+      "name": "Wiosłowanie hantlami",
+      "series": "4",
+      "repeats": "12"
+    },
+    {
+      "id": "Ręce i plecy_3",
+      "name": "Narciarz na linkach",
+      "series": "4",
+      "repeats": "16"
+    },
+    {
+      "id": "Ręce i plecy_4",
+      "name": "Martwy ciąg",
+      "series": "4",
+      "repeats": "14"
+    },
+    {
+      "id": "Ręce i plecy_5",
+      "name": "Podciąganie nachwytem",
+      "series": "4",
+      "repeats": "12"
+    },
+    {
+      "id": "Ręce i plecy_6",
+      "name": "Rolowanie kręgosłupa",
+      "series": "4",
+      "repeats": "16"
+    },
+    {
+      "id": "Ręce i plecy_7",
+      "name": "Unoszenie tułowia na ławce",
+      "series": "4",
+      "repeats": "12"
+    },
+    {
+      "id": "Ręce i plecy_8",
+      "name": "Podciąganie chwytem neutralnym",
+      "series": "4",
+      "repeats": "12"
+    },
+    {
+      "id": "Ręce i plecy_9",
+      "name": "Szrugsy",
+      "series": "4",
+      "repeats": "16"
+    },
+    {
+      "id": "Ręce i plecy_10",
+      "name": "Ściąganie drążka wyciągu górnego",
+      "series": "4",
+      "repeats": "16"
+    }
+  ]
+}
