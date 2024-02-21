@@ -1,14 +1,44 @@
-.progress_cointainer{
-    padding-top: 150px;
-    text-align: center;
-    width: 100vw;
-    height: calc(100vh - 272px);
-  
-    h2 {
-      margin-bottom: 10px;
+@import "src/styles/colors.scss";
+
+.progress_cointainer {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  padding-top: 150px;
+  text-align: center;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 272px);
+  gap: 10px;
+
+    button {
+      background-color: $color-viridian;
+      color: $color-white;
+      padding: 5px 20px;
+      border: none;
+      cursor: pointer;
+      margin-top: 10px;
+      font-size: 15px;
     }
-  
-    p {
-      font-size: 16px;
+
+    button:hover {
+      background-color: $color-dark-green;
     }
-  }
+
+    table {
+      border-collapse: collapse;
+      width: 1400px;
+  
+      th,
+      td {
+        border: 1px solid #ddd;
+        text-align: left;
+        padding: 8px;
+      }
+  
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+    }
+}
