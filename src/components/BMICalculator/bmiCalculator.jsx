@@ -18,15 +18,15 @@ const BmiCalculator = () => {
     <div className="bmi_container">
       <h2>Kalkulator BMI</h2>
       <div>
-        <label>Wzrost (cm):</label>
+        <label>Wzrost (cm): </label>
         <input
           type="number"
           value={height}
           onChange={(e) => setHeight(e.target.value)}
         />
       </div>
-      <div>
-        <label>Waga (kg):</label>
+      <div style={{marginLeft:'15px'}}>
+        <label>Waga (kg): </label>
         <input
           type="number"
           value={weight}
