@@ -1,14 +1,42 @@
+@import "src/styles/colors.scss";
+
 .bmi_container {
-    padding-top: 150px;
-    text-align: center;
-    width: 100vw;
-    height: calc(100vh - 272px);
-  
-    h2 {
-      margin-bottom: 10px;
+  padding-top: 150px;
+  text-align: center;
+  width: 100vw;
+  min-height: calc(100vh - 272px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  div {
+    margin: 10px 0;
+    justify-content: center;
+    align-items: center;
+
+    label {
+      margin-right: 10px;
     }
-  
-    p {
-      font-size: 16px;
+
+    input {
+      width: 200px;
+      padding: 5px;
+      border: 1px solid #ccc;
     }
   }
+
+  button {
+    background-color: $color-viridian;
+    color: $color-white;
+    padding: 5px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 15px;
+  }
+
+  button:hover {
+    background-color: $color-dark-green;
+  }
+}
