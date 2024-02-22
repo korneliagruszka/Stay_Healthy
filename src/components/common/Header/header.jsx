@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useRef } from "react";
 import "../Header/header.scss";
 
@@ -6,23 +6,17 @@ function Header() {
   const planningRef = useRef(null);
   const contactRef = useRef(null);
   const bannerRef = useRef(null);
+  const location = useLocation(); // Używam useLocation, aby sprawdzić na którym widoku znajduje się użytkownik
 
-  const handleButtonClick = () => {
-    const planningElement = planningRef.current;
-    const offsetTop = planningElement.offsetTop + 650;
-    window.scrollTo({ top: offsetTop, behavior: "smooth" });
-  };
-
-  const handleButtonClick2 = () => {
-    const planningElement = planningRef.current;
-    const offsetTop = planningElement.offsetTop + 800;
-    window.scrollTo({ top: offsetTop, behavior: "smooth" });
-  };
-
-  const handleButtonClick3 = () => {
-    const planningElement = planningRef.current;
-    const offsetTop = planningElement.offsetTop - 100;
-    window.scrollTo({ top: offsetTop, behavior: "smooth" });
+  const handleScrollToSection = (ref, offset) => (event) => {
+    if (location.pathname !== '/') {
+      event.preventDefault(); 
+      window.location.href = '/'; // Przekierowanie do strony głównej
+    } else {
+      const element = ref.current;
+      const offsetTop = element.offsetTop + offset;
+      window.scrollTo({ top: offsetTop, behavior: "smooth" });
+    }
   };
 
   return (
@@ -38,13 +32,10 @@ function Header() {
       <div id="banner" ref={bannerRef}></div>
 
       <nav className="navigation">
-        <a href="#banner" onClick={handleButtonClick3}>O nas</a>
-        <a href="#planning" onClick={handleButtonClick}>
-          Planowanie
-        </a>
-        <a href="#contact" onClick={handleButtonClick2}>Kontakt</a>
+        <a href="#banner" onClick={handleScrollToSection(bannerRef, -100)}>O nas</a>
+        <a href="#planning" onClick={handleScrollToSection(planningRef, 650)}>Planowanie</a>
+        <a href="#contact" onClick={handleScrollToSection(contactRef, 800)}>Kontakt</a>
       </nav>
-      
     </div>
   );
 }
