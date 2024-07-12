@@ -11,16 +11,16 @@ This project is simple workout app.
 
 ## Preview
 ### Main page - about us
-![Main page - about us](https://drive.google.com/uc?export=download&id=1eqNM1tafifGUKVuyqjonvaRA9pCwsaCr)
+![Main page - about us](src/assets/screen_1.png)
 
 ### Main page - planning
-![Main page - planning](https://drive.google.com/uc?export=download&id=1eYW1htfkLBLJhMFOKrbVEIs0Nt2bZyzQ)
+![Main page - planning](src/assets/screen_2.png)
 
 ### Training page
-![Training page](https://drive.google.com/uc?export=download&id=11P-yWn0FTt8-ekVs1EeCM2acQJDpMqNh)
+![Training page](src/assets/screen_3.png)
 
 ### Progress page
-![Progress page](https://drive.google.com/uc?export=download&id=1E3vyxUwjvBJY7o0ruHFsVezs_orya5LP)
+![Progress page](src/assets/screen_4.png)
 
 ## Technologies
 * JavaScript
