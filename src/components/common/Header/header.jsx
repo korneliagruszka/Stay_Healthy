@@ -1,3 +1,15 @@
+/**
+ * Header component.
+ *
+ * This component displays the application's header, including the app name
+ * and navigation links to different sections of the homepage.
+ *
+ * Props: None
+ *
+ * Functionality:
+ * - Provides navigation links for "About Us", "Planning", and "Contact".
+ * - Scrolls to the respective sections when links are clicked.
+ */
 import { Link, useLocation } from "react-router-dom";
 import { useRef } from "react";
 import "../Header/header.scss";
@@ -9,9 +21,9 @@ function Header() {
   const location = useLocation(); // Używam useLocation, aby sprawdzić na którym widoku znajduje się użytkownik
 
   const handleScrollToSection = (ref, offset) => (event) => {
-    if (location.pathname !== '/') {
-      event.preventDefault(); 
-      window.location.href = '/'; // Przekierowanie do strony głównej
+    if (location.pathname !== "/") {
+      event.preventDefault();
+      window.location.href = "/"; // Przekierowanie do strony głównej
     } else {
       const element = ref.current;
       const offsetTop = element.offsetTop + offset;
@@ -32,9 +44,15 @@ function Header() {
       <div id="banner" ref={bannerRef}></div>
 
       <nav className="navigation">
-        <a href="#banner" onClick={handleScrollToSection(bannerRef, -100)}>O nas</a>
-        <a href="#planning" onClick={handleScrollToSection(planningRef, 650)}>Planowanie</a>
-        <a href="#contact" onClick={handleScrollToSection(contactRef, 800)}>Kontakt</a>
+        <a href="#banner" onClick={handleScrollToSection(bannerRef, -100)}>
+          O nas
+        </a>
+        <a href="#planning" onClick={handleScrollToSection(planningRef, 650)}>
+          Planowanie
+        </a>
+        <a href="#contact" onClick={handleScrollToSection(contactRef, 800)}>
+          Kontakt
+        </a>
       </nav>
     </div>
   );

@@ -1,3 +1,16 @@
+/**
+ * Footer component.
+ *
+ * This component displays the application's footer, including the app name,
+ * navigation links, and contact information.
+ *
+ * Props: None
+ *
+ * Functionality:
+ * - Provides links to "About Us" and "Planning" sections.
+ * - Displays the application's email address for contact purposes.
+ */
+
 import { useLocation } from "react-router-dom";
 import { useRef } from "react";
 import "../Footer/footer.scss";

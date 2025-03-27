@@ -1,13 +1,27 @@
-import { useState, useEffect } from 'react';
+/**
+ * Progress Tracker component.
+ *
+ * This component allows users to track their progress by entering their weight
+ * and body measurements over time.
+ *
+ * Props: None
+ *
+ * Functionality:
+ * - Accepts user input for weight and measurements.
+ * - Displays a table of progress entries.
+ * - Saves progress data to localStorage for persistence.
+ */
+
+import { useState, useEffect } from "react";
 import "../Progress/progress.scss";
 
 function Progress() {
-  const [weight, setWeight] = useState('');
-  const [measurements, setMeasurements] = useState('');
+  const [weight, setWeight] = useState("");
+  const [measurements, setMeasurements] = useState("");
   const [progress, setProgress] = useState([]);
 
   useEffect(() => {
-    const savedProgress = JSON.parse(localStorage.getItem('progress')) || [];
+    const savedProgress = JSON.parse(localStorage.getItem("progress")) || [];
     setProgress(savedProgress);
   }, []);
 
@@ -19,15 +33,15 @@ function Progress() {
       measurements,
     };
     const updatedProgress = [...progress, newProgress];
-    localStorage.setItem('progress', JSON.stringify(updatedProgress));
+    localStorage.setItem("progress", JSON.stringify(updatedProgress));
     setProgress(updatedProgress);
-    setWeight('');
-    setMeasurements('');
+    setWeight("");
+    setMeasurements("");
   };
 
   const deleteProgress = (id) => {
-    const updatedProgress = progress.filter(entry => entry.id !== id);
-    localStorage.setItem('progress', JSON.stringify(updatedProgress));
+    const updatedProgress = progress.filter((entry) => entry.id !== id);
+    localStorage.setItem("progress", JSON.stringify(updatedProgress));
     setProgress(updatedProgress);
   };
 
@@ -38,13 +52,13 @@ function Progress() {
         type="text"
         placeholder="Aktualna waga"
         value={weight}
-        onChange={e => setWeight(e.target.value)}
+        onChange={(e) => setWeight(e.target.value)}
       />
       <input
         type="text"
         placeholder="Aktualne wymiary"
         value={measurements}
-        onChange={e => setMeasurements(e.target.value)}
+        onChange={(e) => setMeasurements(e.target.value)}
       />
       <button onClick={saveProgress}>Zapisz postępy</button>
       {progress.length > 0 && (
