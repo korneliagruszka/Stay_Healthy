@@ -1,3 +1,15 @@
+/**
+ * BMI Calculator component.
+ *
+ * This component allows users to calculate their Body Mass Index (BMI)
+ * by entering their height and weight.
+ *
+ * Props: None
+ *
+ * Functionality:
+ * - Accepts user input for height and weight.
+ * - Calculates BMI and displays the result along with the BMI category.
+ */
 import { useState } from "react";
 import "../BMICalculator/bmiCalculator.scss";
 
@@ -25,7 +37,7 @@ const BmiCalculator = () => {
           onChange={(e) => setHeight(e.target.value)}
         />
       </div>
-      <div style={{marginLeft:'15px'}}>
+      <div style={{ marginLeft: "15px" }}>
         <label>Waga (kg): </label>
         <input
           type="number"

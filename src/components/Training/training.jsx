@@ -1,3 +1,16 @@
+/**
+ * Training Planner component.
+ *
+ * This component allows users to create a personalized training plan by
+ * selecting exercises from predefined categories.
+ *
+ * Props: None
+ *
+ * Functionality:
+ * - Displays exercise categories and allows users to select exercises.
+ * - Saves the selected exercises to localStorage for persistence.
+ */
+
 import { useState, useEffect } from "react";
 import "../Training/training.scss";
 import NewTraining from "./newTraining";
@@ -7,7 +20,7 @@ function Training() {
   const [selectedExercises, setSelectedExercises] = useState([]);
 
   useEffect(() => {
-    const storedExercises = localStorage.getItem('selectedExercises');
+    const storedExercises = localStorage.getItem("selectedExercises");
     if (storedExercises) {
       setSelectedExercises(JSON.parse(storedExercises));
     }
@@ -23,19 +36,21 @@ function Training() {
 
   const handleExercisesSelection = (newExercises) => {
     // Dodanie rodzaju treningu do każdego ćwiczenia
-    const exercisesWithTraining = newExercises.map(exercise => ({
+    const exercisesWithTraining = newExercises.map((exercise) => ({
       ...exercise,
-      trainingType: selectedTraining
+      trainingType: selectedTraining,
     }));
     const updatedExercises = [...selectedExercises, ...exercisesWithTraining];
     setSelectedExercises(updatedExercises);
-    localStorage.setItem('selectedExercises', JSON.stringify(updatedExercises));
+    localStorage.setItem("selectedExercises", JSON.stringify(updatedExercises));
   };
 
   const removeExercise = (indexToRemove) => {
-    const newExercises = selectedExercises.filter((_, index) => index !== indexToRemove);
+    const newExercises = selectedExercises.filter(
+      (_, index) => index !== indexToRemove
+    );
     setSelectedExercises(newExercises);
-    localStorage.setItem('selectedExercises', JSON.stringify(newExercises));
+    localStorage.setItem("selectedExercises", JSON.stringify(newExercises));
   };
 
   return (
@@ -43,7 +58,12 @@ function Training() {
       <h2>Zaplanuj swój trening</h2>
       <form onSubmit={handleSubmit}>
         <label htmlFor="trainingType">Wybierz rodzaj treningu:</label>
-        <select id="trainingType" name="trainingType" value={selectedTraining} onChange={(e) => setSelectedTraining(e.target.value)}>
+        <select
+          id="trainingType"
+          name="trainingType"
+          value={selectedTraining}
+          onChange={(e) => setSelectedTraining(e.target.value)}
+        >
           <option value="">Wybierz</option>
           <option value="Ręce i plecy">Ręce i plecy</option>
           <option value="Brzuch i klatka">Brzuch i klatka</option>
@@ -51,7 +71,10 @@ function Training() {
         </select>
       </form>
       {selectedTraining && (
-        <NewTraining selectedTraining={selectedTraining} onExercisesSelected={handleExercisesSelection} />
+        <NewTraining
+          selectedTraining={selectedTraining}
+          onExercisesSelected={handleExercisesSelection}
+        />
       )}
       {selectedExercises.length > 0 && (
         <table>

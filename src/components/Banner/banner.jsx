@@ -1,3 +1,15 @@
+/**
+ * Banner component.
+ *
+ * This component displays the main banner on the homepage, including a brief
+ * description of the application and a button to navigate to the planning section.
+ *
+ * Props: None
+ *
+ * Functionality:
+ * - Displays a welcome message and a call-to-action button.
+ * - Scrolls to the planning section when the button is clicked.
+ */
 import { useRef } from "react";
 import "../Banner/banner.scss";
 
